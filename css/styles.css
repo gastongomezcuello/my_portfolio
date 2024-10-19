@@ -1,9 +1,9 @@
 /* desktop */
-
-html {
+rem html {
   height: 100%;
   margin: 0;
   padding: 0;
+  font-size: 62.5%;
 }
 body {
   color: #2a2208;
@@ -22,7 +22,6 @@ header section ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap;
 }
 header section ul li {
   margin: 4px;
@@ -31,21 +30,10 @@ header section ul li a {
   display: block;
   text-decoration: none;
   color: #ffc400;
-  font-size: 1.3em;
-}
-
-.grid-container {
-  min-height: 300px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-}
-.grid-item {
-  grid-column: 2;
-  grid-row: 2;
+  font-size: 1.3rem;
 }
 .my-toggler {
-  font-size: 2.5em;
+  font-size: 2.5rem;
   color: #ffc400;
 }
 .logo {
@@ -62,7 +50,7 @@ img.profile {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  font-size: 1.8em;
+  font-size: 1.8rem;
 }
 .centered-text {
   text-align: center;
@@ -70,19 +58,52 @@ img.profile {
 
 .highlight {
   font-weight: bold;
-  font-size: 3em;
+  font-size: 4rem;
 }
 
 h1 {
   font-weight: bold;
-  font-size: 5em;
+  font-size: 5rem;
 }
 
-.big-button {
+.button {
   background-color: #2a2208;
-  width: 100%;
+  width: 60%;
   height: 60%;
   color: #ffc400;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   border-radius: 25px;
+}
+
+footer p {
+  color: #ffc400;
+}
+
+/* media querys mobile */
+
+@media (max-width: 768px) {
+  header section ul {
+    flex-direction: column;
+  }
+  header section ul li {
+    margin: 10px;
+  }
+  .my-toggler {
+    font-size: 2rem;
+  }
+  .logo {
+    width: 40px;
+  }
+  .vertical-align {
+    font-size: 1.5rem;
+  }
+  .highlight {
+    font-size: 2.5rem;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  .big-button {
+    font-size: 1.2rem;
+  }
 }
