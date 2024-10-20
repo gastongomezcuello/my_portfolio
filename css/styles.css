@@ -26,6 +26,7 @@ header section ul {
 header section ul li {
   margin: 4px;
 }
+
 header section ul li a {
   display: block;
   text-decoration: none;
@@ -46,6 +47,20 @@ img.profile {
   border-radius: 60px;
 }
 
+.main-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  font-size: 1.8rem;
+}
+.component-1{
+  flex: 1;
+}
+.component-2{
+  text-align: center;
+  flex: 1;
+}
 .vertical-align {
   display: flex;
   flex-direction: column;
@@ -67,9 +82,10 @@ h1 {
 }
 
 .button {
+  padding: 0 6px;
   background-color: #2a2208;
-  width: 60%;
-  height: 60%;
+  width: 30vw;
+  height: 100px;
   color: #ffc400;
   font-size: 1.5rem;
   border-radius: 25px;
@@ -79,12 +95,9 @@ footer p {
   color: #ffc400;
 }
 
-/* media querys mobile */
+/* media querys tabl */
 
-@media (max-width: 768px) {
-  header section ul {
-    flex-direction: column;
-  }
+@media (max-width: 1024px) {
   header section ul li {
     margin: 10px;
   }
@@ -103,7 +116,47 @@ footer p {
   h1 {
     font-size: 3rem;
   }
-  .big-button {
+  .button {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 640px)  {
+  header section ul {
+    flex-direction: column;
+  }
+  header section ul li {
+    margin: 10px;
+  }
+  .my-toggler {
+    font-size: 1.6rem;
+  }
+  .logo {
+    width: 40px;
+  }
+  .main-content {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    font-size: 1.3rem;
+  }
+  .component-1{
+    flex: 1;
+  }
+  .component-2{
+    text-align: center;
+    flex: 1;
+  }
+  .vertical-align {
     font-size: 1.2rem;
+  }
+  .highlight {
+    font-size: 2rem;
+  }
+  h1 {
+    font-size: 2.6rem;
+  }
+  .button {
+    font-size: 1.1rem;
   }
 }
