@@ -1,5 +1,5 @@
-/* desktop */
-rem html {
+/* desktop global*/
+html {
   height: 100%;
   margin: 0;
   padding: 0;
@@ -7,14 +7,19 @@ rem html {
 }
 body {
   color: #2a2208;
+  text-shadow: 0.15rem 0.15rem 0.6rem #2a2208;
+  font-size: 1.3rem;
 }
 
+
+.bg-primary-color {
+  background: linear-gradient(60deg, #ffc400 0%, #f3a32b 100%);
+}
 .bg-secondary-color {
   background-color: #2a2208;
 }
-
-.bg-primary-color {
-  background-color: #ffc400;
+.bg-tertiary-color {
+  background-color: rgba(42, 34, 8, 0.3) ;
 }
 
 header section ul {
@@ -31,10 +36,10 @@ header section ul li a {
   display: block;
   text-decoration: none;
   color: #ffc400;
-  font-size: 1.3rem;
+  font-size: 2rem;
 }
 .my-toggler {
-  font-size: 2.5rem;
+  font-size: 45px;
   color: #ffc400;
 }
 .logo {
@@ -45,6 +50,12 @@ header section ul li a {
 img.profile {
   border: 6px solid #2a2208;
   border-radius: 60px;
+  box-shadow: 0px 4px 10px #2a2208;
+}
+ 
+h1 {
+  font-weight: bold;
+  font-size: 7rem;
 }
 
 .main-content {
@@ -52,49 +63,54 @@ img.profile {
   flex-direction: row;
   align-items: center;
   width: 100%;
-  font-size: 1.8rem;
 }
-.component-1{
+.component-f-1{
   flex: 1;
 }
-.component-2{
-  text-align: center;
-  flex: 1;
-}
+
 .vertical-align {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  font-size: 1.8rem;
+  font-size: 2.5rem;
 }
 .centered-text {
   text-align: center;
 }
 
-.highlight {
-  font-weight: bold;
-  font-size: 4rem;
-}
-
-h1 {
-  font-weight: bold;
-  font-size: 5rem;
-}
-
 .button {
+  border: 6px solid #2a2208;
+  border-radius: 45px;
+  box-shadow: 0px 4px 10px #2a2208;
   padding: 0 6px;
   background-color: #2a2208;
   width: 30vw;
   height: 100px;
   color: #ffc400;
-  font-size: 1.5rem;
-  border-radius: 25px;
+  font-size: 2.5rem;
 }
 
 footer p {
   color: #ffc400;
 }
 
+/* index-styles */
+.highlight {
+  font-weight: bold;
+  font-size: 5rem;
+}
+
+/* statements-styles */
+.grid-container-statements{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  box-shadow: 0px 4px 10px #2a2208;
+  border-radius: 45px;
+}
+.statements{
+  text-shadow:none;
+}
 /* media querys tabl */
 
 @media (max-width: 1024px) {
@@ -140,11 +156,7 @@ footer p {
     width: 100%;
     font-size: 1.3rem;
   }
-  .component-1{
-    flex: 1;
-  }
-  .component-2{
-    text-align: center;
+  .component-f-1{
     flex: 1;
   }
   .vertical-align {
