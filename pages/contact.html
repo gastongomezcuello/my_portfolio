@@ -39,21 +39,24 @@
       </nav>
     </header>
 
-    <main class="bg-primary-color container-fluid">
+    <main class="bg-primary-color container-fluid pb-5">
       <h1>Ahora si, es tu turno de hablar</h1>
-      <div class="div-container-form">
-        <form action="">
-          <label for="name">Name:</label>
+      <h2>Envíame un mensaje o consulta para colaborar en tu proyecto</h2>
+      <section class="container-form bg-tertiary-color p-5 m-5">
+        <form class="grid-container-form" action="">
+          <label for="name">Nombre completo:</label>
           <input type="text" id="name" />
-          <label for="phoneNumber">Phone Number:</label>
+          <label for="phoneNumber">Número de teléfono:</label>
           <input type="text" id="phoneNumber" />
-          <label for="email">Email:</label>
+          <label for="email">Correo electrónico:</label>
           <input type="text" id="email" />
-          <label for="query">Query:</label>
-          <textarea name="" id="query" cols="30" rows="10"></textarea>
-          <button type="submit" class="button">Enviar Mensaje</button>
+          <label for="query">Mensaje:</label>
+          <textarea name="" id="query"></textarea>
+          <button type="submit" class="form-button mt-5 grid-item-4">
+            Enviar Mensaje
+          </button>
         </form>
-      </div>
+      </section>
     </main>
 
     <footer class="pb-3 pt-3 bg-secondary-color container-fluid">

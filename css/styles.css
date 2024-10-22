@@ -11,7 +11,6 @@ body {
   font-size: 1.3rem;
 }
 
-
 .bg-primary-color {
   background: linear-gradient(60deg, #ffc400 0%, #f3a32b 100%);
 }
@@ -19,9 +18,25 @@ body {
   background-color: #2a2208;
 }
 .bg-tertiary-color {
-  background-color: rgba(42, 34, 8, 0.3) ;
+  background-color: rgba(42, 34, 8, 0.3);
 }
 
+h1 {
+  font-weight: bold;
+  font-size: 7rem;
+}
+h2 {
+  font-size: 4rem;
+}
+h3 {
+  font-size: 3rem;
+}
+b {
+  font-size: 2.5rem;
+}
+p {
+  font-size: 2rem;
+}
 header section ul {
   list-style-type: none;
   display: flex;
@@ -39,7 +54,7 @@ header section ul li a {
   font-size: 2rem;
 }
 .my-toggler {
-  font-size: 45px;
+  font-size: 60px;
   color: #ffc400;
 }
 .logo {
@@ -52,11 +67,6 @@ img.profile {
   border-radius: 60px;
   box-shadow: 0px 4px 10px #2a2208;
 }
- 
-h1 {
-  font-weight: bold;
-  font-size: 7rem;
-}
 
 .main-content {
   display: flex;
@@ -64,7 +74,7 @@ h1 {
   align-items: center;
   width: 100%;
 }
-.component-f-1{
+.component-f-1 {
   flex: 1;
 }
 
@@ -78,7 +88,8 @@ h1 {
   text-align: center;
 }
 
-.button {
+.button,
+.form-button {
   border: 6px solid #2a2208;
   border-radius: 45px;
   box-shadow: 0px 4px 10px #2a2208;
@@ -101,24 +112,57 @@ footer p {
 }
 
 /* statements-styles */
-.grid-container-statements{
+.grid-container-statements {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(3, 1fr);
   box-shadow: 0px 4px 10px #2a2208;
   border-radius: 45px;
 }
-.statements{
-  text-shadow:none;
+.statements {
+  text-shadow: none;
+  font-size: 1.5rem;
 }
-/* media querys tabl */
+
+/* contact-styles */
+.container-form {
+  box-shadow: 0px 4px 10px #2a2208;
+  border-radius: 45px;
+}
+.grid-container-form {
+  display: grid;
+  grid-template-columns: 3fr 2fr 3fr 2fr;
+  gap: 50px;
+}
+
+label {
+  font-size: 2.6rem;
+}
+input,
+textarea {
+  resize: none;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px #2a2208;
+  font-size: 2.2rem;
+  padding: 10px;
+}
+.form-button {
+  width: 20vw;
+}
+
+/* media queries */
+@media (max-width: 1140px) {
+  .grid-container-form {
+    grid-template-columns: 2fr 1fr;
+  }
+}
 
 @media (max-width: 1024px) {
   header section ul li {
     margin: 10px;
   }
   .my-toggler {
-    font-size: 2rem;
+    font-size: 45px;
   }
   .logo {
     width: 40px;
@@ -127,17 +171,30 @@ footer p {
     font-size: 1.5rem;
   }
   .highlight {
-    font-size: 2.5rem;
+    font-size: 5rem;
   }
   h1 {
+    font-size: 6rem;
+  }
+  h2 {
     font-size: 3rem;
   }
-  .button {
-    font-size: 1.4rem;
+  h3 {
+    font-size: 2.5rem;
+  }
+  b {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1.8rem;
+  }
+  .button,
+  .form-button {
+    font-size: 2.5rem;
   }
 }
 
-@media (max-width: 640px)  {
+@media (max-width: 640px) {
   header section ul {
     flex-direction: column;
   }
@@ -145,10 +202,25 @@ footer p {
     margin: 10px;
   }
   .my-toggler {
-    font-size: 1.6rem;
+    font-size: 40px;
   }
   .logo {
     width: 40px;
+  }
+  h1 {
+    font-size: 4.5rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  b {
+    font-size: 1.9rem;
+  }
+  p {
+    font-size: 1.6rem;
   }
   .main-content {
     flex-direction: column;
@@ -156,19 +228,21 @@ footer p {
     width: 100%;
     font-size: 1.3rem;
   }
-  .component-f-1{
+  .component-f-1 {
     flex: 1;
   }
   .vertical-align {
     font-size: 1.2rem;
   }
   .highlight {
-    font-size: 2rem;
+    font-size: 4rem;
   }
-  h1 {
-    font-size: 2.6rem;
+  .button,
+  .form-button {
+    font-size: 2.2rem;
   }
-  .button {
-    font-size: 1.1rem;
+  .grid-container-statements {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
   }
 }
