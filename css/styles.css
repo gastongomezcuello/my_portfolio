@@ -239,7 +239,9 @@ textarea {
   }
   .button,
   .form-button {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
+    width: 50vw;
+    padding: 15px;
   }
   .grid-container-statements {
     grid-template-columns: 1fr;
