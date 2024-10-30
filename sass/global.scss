@@ -1,0 +1,157 @@
+html {
+  font-size: 62.5%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $font-family;
+  line-height: 1.6;
+  color: $secondary-color;
+  text-shadow: $text-shadow;
+}
+.bg-primary {
+  background: $background-color;
+}
+.bg-secondary {
+  background-color: $secondary-color;
+}
+
+h1 {
+  font-size: $font-desktop-size-xxl;
+  font-weight: bold;
+}
+h2 {
+  font-size: $font-desktop-size-xl;
+}
+h3 {
+  font-size: $font-desktop-size-lg;
+}
+b {
+  font-size: $font-desktop-size-md;
+}
+p {
+  font-size: $font-desktop-size-sm;
+}
+
+header {
+  section {
+    ul {
+      list-style-type: none;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      li {
+        margin: 4px;
+        a {
+          display: block;
+          text-decoration: none;
+          color: $primary-color;
+          font-size: $font-desktop-size-md;
+        }
+      }
+    }
+  }
+}
+.my-toggler {
+  font-size: 60px;
+  color: $primary-color;
+}
+.logo {
+  aspect-ratio: 1/1;
+  width: 60px;
+}
+
+img.profile {
+  border: 6px solid $secondary-color;
+  border-radius: 60px;
+  box-shadow: $box-shadow;
+}
+.flex-container {
+  display: flex;
+  .component-f-1 {
+    flex: 1;
+  }
+  .centered-text {
+    text-align: center;
+  }
+}
+
+.main-content {
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+.vertical-align {
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: $font-desktop-size-md;
+}
+
+.button {
+  background-color: $secondary-color;
+  color: $primary-color;
+  border: none;
+  box-shadow: $box-shadow;
+  padding: 0px 6px;
+  width: 30vw;
+  height: 100px;
+  font-size: $font-desktop-size-md;
+}
+
+footer {
+  p {
+    color: $primary-color;
+  }
+}
+
+/* index */
+
+.highlight {
+  font-weight: bold;
+  font-size: 4.5rem;
+}
+
+/* statements */
+
+.grid-container-statements {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  box-shadow: $box-shadow;
+  border-radius: 45px;
+}
+.statements {
+  text-shadow: none;
+  font-size: 1.5rem;
+}
+
+/* contact */
+
+.container-form {
+  box-shadow: 0px 4px 10px #2a2208;
+  border-radius: 45px;
+}
+.grid-container-form {
+  display: grid;
+  grid-template-columns: 3fr 2fr 3fr 2fr;
+  gap: 50px;
+}
+
+label {
+  font-size: $font-desktop-size-md;
+}
+input,
+textarea {
+  resize: none;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px #2a2208;
+  font-size: $font-desktop-size-sm;
+  padding: 10px;
+}
+.form-button {
+  @extend .button;
+  width: 20vw;
+}

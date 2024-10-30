@@ -1,0 +1,32 @@
+//colors
+
+$primary-color: #ffc400;
+$secondary-color: #2a2208;
+$background-color: linear-gradient(60deg, #ffc400 0%, #f3a32b 100%);
+
+// fonts
+
+$font-family: "Quicksand", sans-serif;
+
+$font-desktop-size-xxl: 6rem;
+$font-desktop-size-xl: 3.5rem;
+$font-desktop-size-lg: 2.5rem;
+$font-desktop-size-md: 1.8rem;
+$font-desktop-size-sm: 1.5rem;
+
+$font-tablet-size-xxl: 5rem;
+$font-tablet-size-xl: 3rem;
+$font-tablet-size-lg: 2rem;
+$font-tablet-size-md: 1.5rem;
+$font-tablet-size-sm: 1.2rem;
+
+$font-mobile-size-xxl: 4rem;
+$font-mobile-size-xl: 2.5rem;
+$font-mobile-size-lg: 2rem;
+$font-mobile-size-md: 1.5rem;
+$font-mobile-size-sm: 1.2rem;
+
+// text-shadow / box-shadow
+
+$text-shadow: 0.15rem 0.15rem 0.6rem $secondary-color;
+$box-shadow: 0px 4px 10px $secondary-color;

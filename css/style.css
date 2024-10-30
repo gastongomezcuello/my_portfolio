@@ -1,42 +1,48 @@
-/* desktop global*/
+/* variables */
+/* global styles */
 html {
+  font-size: 62.5%;
   height: 100%;
   margin: 0;
   padding: 0;
-  font-size: 62.5%;
-}
-body {
-  color: #2a2208;
-  text-shadow: 0.15rem 0.15rem 0.6rem #2a2208;
-  font-size: 1.3rem;
 }
 
-.bg-primary-color {
+body {
+  font-family: "Quicksand", sans-serif;
+  line-height: 1.6;
+  color: #2a2208;
+  text-shadow: 0.15rem 0.15rem 0.6rem #2a2208;
+}
+
+.bg-primary {
   background: linear-gradient(60deg, #ffc400 0%, #f3a32b 100%);
 }
-.bg-secondary-color {
+
+.bg-secondary {
   background-color: #2a2208;
-}
-.bg-tertiary-color {
-  background-color: rgba(42, 34, 8, 0.3);
 }
 
 h1 {
+  font-size: 6rem;
   font-weight: bold;
-  font-size: 7rem;
 }
+
 h2 {
-  font-size: 4rem;
+  font-size: 3.5rem;
 }
+
 h3 {
-  font-size: 3rem;
-}
-b {
   font-size: 2.5rem;
 }
-p {
-  font-size: 2rem;
+
+b {
+  font-size: 1.8rem;
 }
+
+p {
+  font-size: 1.5rem;
+}
+
 header section ul {
   list-style-type: none;
   display: flex;
@@ -46,19 +52,20 @@ header section ul {
 header section ul li {
   margin: 4px;
 }
-
 header section ul li a {
   display: block;
   text-decoration: none;
   color: #ffc400;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
+
 .my-toggler {
   font-size: 60px;
   color: #ffc400;
 }
+
 .logo {
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 1/1;
   width: 60px;
 }
 
@@ -68,50 +75,50 @@ img.profile {
   box-shadow: 0px 4px 10px #2a2208;
 }
 
-.main-content {
+.flex-container {
   display: flex;
+}
+.flex-container .component-f-1 {
+  flex: 1;
+}
+.flex-container .centered-text {
+  text-align: center;
+}
+
+.main-content {
   flex-direction: row;
   align-items: center;
   width: 100%;
 }
-.component-f-1 {
-  flex: 1;
-}
 
 .vertical-align {
-  display: flex;
   flex-direction: column;
   align-items: flex-start;
-  font-size: 2.5rem;
-}
-.centered-text {
-  text-align: center;
+  font-size: 1.8rem;
 }
 
-.button,
-.form-button {
-  border: 6px solid #2a2208;
-  border-radius: 45px;
-  box-shadow: 0px 4px 10px #2a2208;
-  padding: 0 6px;
+.button, .form-button {
   background-color: #2a2208;
+  color: #ffc400;
+  border: none;
+  box-shadow: 0px 4px 10px #2a2208;
+  padding: 0px 6px;
   width: 30vw;
   height: 100px;
-  color: #ffc400;
-  font-size: 2.5rem;
+  font-size: 1.8rem;
 }
 
 footer p {
   color: #ffc400;
 }
 
-/* index-styles */
+/* index */
 .highlight {
   font-weight: bold;
-  font-size: 5rem;
+  font-size: 4.5rem;
 }
 
-/* statements-styles */
+/* statements */
 .grid-container-statements {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -119,16 +126,18 @@ footer p {
   box-shadow: 0px 4px 10px #2a2208;
   border-radius: 45px;
 }
+
 .statements {
   text-shadow: none;
   font-size: 1.5rem;
 }
 
-/* contact-styles */
+/* contact */
 .container-form {
   box-shadow: 0px 4px 10px #2a2208;
   border-radius: 45px;
 }
+
 .grid-container-form {
   display: grid;
   grid-template-columns: 3fr 2fr 3fr 2fr;
@@ -136,16 +145,18 @@ footer p {
 }
 
 label {
-  font-size: 2.6rem;
+  font-size: 1.8rem;
 }
+
 input,
 textarea {
   resize: none;
   border-radius: 15px;
   box-shadow: 0px 4px 10px #2a2208;
-  font-size: 2.2rem;
+  font-size: 1.5rem;
   padding: 10px;
 }
+
 .form-button {
   width: 20vw;
 }
@@ -156,7 +167,6 @@ textarea {
     grid-template-columns: 2fr 1fr;
   }
 }
-
 @media (max-width: 1024px) {
   header section ul li {
     margin: 10px;
@@ -165,35 +175,33 @@ textarea {
     font-size: 45px;
   }
   .logo {
-    width: 40px;
+    font-size: 40px;
   }
   .vertical-align {
     font-size: 1.5rem;
   }
   .highlight {
-    font-size: 5rem;
+    font-size: 2rem;
   }
   h1 {
-    font-size: 6rem;
+    font-size: 5rem;
   }
   h2 {
     font-size: 3rem;
   }
   h3 {
-    font-size: 2.5rem;
-  }
-  b {
     font-size: 2rem;
   }
-  p {
-    font-size: 1.8rem;
+  b {
+    font-size: 1.5rem;
   }
-  .button,
-  .form-button {
-    font-size: 2.5rem;
+  p {
+    font-size: 1.2rem;
+  }
+  .button, .form-button {
+    font-size: 1.5rem;
   }
 }
-
 @media (max-width: 640px) {
   header section ul {
     flex-direction: column;
@@ -201,50 +209,63 @@ textarea {
   header section ul li {
     margin: 10px;
   }
-  .my-toggler {
-    font-size: 40px;
-  }
-  .logo {
-    width: 40px;
-  }
-  h1 {
-    font-size: 4.5rem;
-  }
-  h2 {
-    font-size: 2.5rem;
-  }
-  h3 {
-    font-size: 2rem;
-  }
-  b {
-    font-size: 1.9rem;
-  }
-  p {
-    font-size: 1.6rem;
-  }
-  .main-content {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    font-size: 1.3rem;
-  }
-  .component-f-1 {
-    flex: 1;
-  }
-  .vertical-align {
-    font-size: 1.2rem;
-  }
-  .highlight {
-    font-size: 4rem;
-  }
-  .button,
-  .form-button {
-    font-size: 1.8rem;
-    width: 50vw;
-    padding: 15px;
-  }
-  .grid-container-statements {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 1fr);
-  }
 }
+.my-toggler {
+  font-size: 40px;
+}
+
+.logo {
+  font-size: 35px;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+b {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+.main-content {
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+.vertical-align {
+  font-size: 1.5rem;
+}
+
+.highlight {
+  font-size: 2rem;
+}
+
+.button, .form-button {
+  font-size: 1.5rem;
+  width: 50vw;
+  padding: 15px;
+}
+
+.grid-container-statements {
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, 1fr);
+}
+
+.grid-container-form {
+  grid-template-columns: 1fr;
+}
+
+/*# sourceMappingURL=aja.css.map */
