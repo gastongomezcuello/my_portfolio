@@ -73,6 +73,9 @@
   p {
     font-size: $font-tablet-size-sm;
   }
+  .lat-p {
+    padding: 0 $lateral-padding-lg;
+  }
   .button {
     font-size: $font-tablet-size-md;
   }
@@ -120,6 +123,9 @@
   }
   p {
     font-size: $font-mobile-size-sm;
+  }
+  .lat-p {
+    padding: 0 $lateral-padding-md;
   }
 
   .main-content {
@@ -223,5 +229,11 @@
   }
   input {
     width: 100%;
+  }
+  footer {
+    grid-template-columns: 1fr;
+    .footer-links {
+      justify-content: space-around;
+    }
   }
 }
