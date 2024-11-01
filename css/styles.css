@@ -51,7 +51,8 @@ h3 {
   font-size: 2.5rem;
 }
 
-b {
+b,
+h4 {
   font-size: 2rem;
 }
 
@@ -148,12 +149,14 @@ img.profile {
 .box {
   box-shadow: 0px 4px 10px #2a2208;
   border-radius: 30px;
+  text-shadow: none;
 }
 
 footer {
   display: grid;
   grid-template-columns: 1fr 7fr 1fr;
   place-items: center;
+  gap: 25px;
 }
 footer .footer-links {
   width: 100%;
@@ -166,13 +169,15 @@ footer .copyright {
   width: 100%;
 }
 footer .carousel-item {
-  height: 15rem;
+  height: 14rem;
 }
 footer img.links {
-  width: 40px;
-  margin: 15px;
+  width: 5vw;
+  margin: 2rem;
+  max-width: 40px;
 }
-footer p {
+footer p,
+footer h3 {
   color: #ffc400;
 }
 
@@ -218,8 +223,7 @@ footer p {
 }
 
 .statements {
-  text-shadow: none;
-  font-size: 1.5rem;
+  font-size: 2rem;
   padding: 10px;
 }
 
@@ -278,6 +282,14 @@ textarea {
 
 .form-button {
   width: 20vw;
+}
+
+/* bootstrap changes */
+.carousel-caption {
+  all: unset;
+  position: absolute;
+  top: 25%;
+  width: 100%;
 }
 
 /* media queries */
@@ -343,7 +355,8 @@ textarea {
   h3 {
     font-size: 2rem;
   }
-  b {
+  b,
+  h4 {
     font-size: 1.6rem;
   }
   p {
@@ -385,7 +398,8 @@ textarea {
   h3 {
     font-size: 2rem;
   }
-  b {
+  b,
+  h4 {
     font-size: 1.6rem;
   }
   p {
@@ -499,6 +513,15 @@ textarea {
   }
   footer .footer-links {
     justify-content: space-around;
+  }
+  footer .carousel-item {
+    height: 8rem;
+  }
+  .carousel-caption {
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
   }
 }
 

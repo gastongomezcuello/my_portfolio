@@ -67,7 +67,8 @@
   h3 {
     font-size: $font-tablet-size-lg;
   }
-  b {
+  b,
+  h4 {
     font-size: $font-tablet-size-md;
   }
   p {
@@ -118,7 +119,8 @@
   h3 {
     font-size: $font-mobile-size-lg;
   }
-  b {
+  b,
+  h4 {
     font-size: $font-mobile-size-md;
   }
   p {
@@ -235,5 +237,14 @@
     .footer-links {
       justify-content: space-around;
     }
+    .carousel-item {
+      height: 8rem;
+    }
+  }
+  .carousel-caption {
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
   }
 }

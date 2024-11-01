@@ -38,7 +38,8 @@ h2 {
 h3 {
   font-size: $font-desktop-size-lg;
 }
-b {
+b,
+h4 {
   font-size: $font-desktop-size-md;
 }
 p {
@@ -130,12 +131,14 @@ img.profile {
 .box {
   box-shadow: $box-shadow;
   border-radius: $border-radius-lg;
+  text-shadow: none;
 }
 
 footer {
   display: grid;
   grid-template-columns: 1fr 7fr 1fr;
   place-items: center;
+  gap: 25px;
   .footer-links {
     width: 100%;
     justify-content: space-between;
@@ -147,13 +150,15 @@ footer {
     width: 100%;
   }
   .carousel-item {
-    height: 15rem;
+    height: 14rem;
   }
   img.links {
-    width: 40px;
-    margin: 15px;
+    width: 5vw;
+    margin: 2rem;
+    max-width: 40px;
   }
-  p {
+  p,
+  h3 {
     color: $primary-color;
   }
 }
@@ -201,8 +206,7 @@ footer {
   grid-template-rows: repeat(3, 1fr);
 }
 .statements {
-  text-shadow: none;
-  font-size: 1.5rem;
+  font-size: $font-desktop-size-md;
   padding: 10px;
 }
 
@@ -261,4 +265,14 @@ textarea {
 .form-button {
   @extend .button;
   width: 20vw;
+}
+
+/* bootstrap changes */
+
+.carousel-caption {
+  all: unset;
+  position: absolute;
+  top: 25%;
+
+  width: 100%;
 }
