@@ -83,6 +83,15 @@
   .form-button {
     width: 70%;
   }
+  .grid-container-projects {
+    grid-template-columns: 1fr;
+    .project {
+      max-width: 800px;
+      img.projects {
+        max-width: 800px;
+      }
+    }
+  }
   .grid-container-about {
     .about-4 {
       li {

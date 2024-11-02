@@ -40,7 +40,7 @@ body main {
 h1 {
   font-size: 6rem;
   font-weight: bold;
-  padding: 3rem 0 10rem 0;
+  padding: 3rem 0 4rem 0;
 }
 
 h2 {
@@ -58,6 +58,10 @@ h4 {
 
 p {
   font-size: 1.8rem;
+}
+
+.justified {
+  text-align: justify;
 }
 
 ul {
@@ -87,15 +91,13 @@ header section ul li a {
   color: #ffc400;
   font-size: 2rem;
 }
-
-.my-toggler {
-  font-size: 60px;
+header .my-toggler {
+  font-size: 40px;
   color: #ffc400;
 }
-
-.logo {
+header .logo {
   aspect-ratio: 1/1;
-  width: 60px;
+  width: 40px;
 }
 
 img.profile {
@@ -104,7 +106,7 @@ img.profile {
   border-radius: 60px;
   box-shadow: 0px 4px 10px #2a2208;
   width: 100%;
-  max-width: 500px;
+  max-width: 600px;
 }
 
 .flex-container {
@@ -185,6 +187,27 @@ footer h3 {
 .highlight {
   font-weight: bold;
   font-size: 4.5rem;
+}
+
+/* projects */
+.grid-container-projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  gap: 25px;
+}
+.grid-container-projects .project {
+  padding: 1rem;
+  max-width: 400px;
+  height: 100%;
+}
+.grid-container-projects .project img.projects {
+  aspect-ratio: 16/9;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 2rem;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px #2a2208;
 }
 
 /* about */
@@ -370,6 +393,15 @@ textarea {
   }
   .form-button {
     width: 70%;
+  }
+  .grid-container-projects {
+    grid-template-columns: 1fr;
+  }
+  .grid-container-projects .project {
+    max-width: 800px;
+  }
+  .grid-container-projects .project img.projects {
+    max-width: 800px;
   }
   .grid-container-about .about-4 li {
     font-size: 1.3rem;

@@ -30,7 +30,7 @@ body {
 h1 {
   font-size: $font-desktop-size-xxl;
   font-weight: bold;
-  padding: 3rem 0 10rem 0;
+  padding: 3rem 0 4rem 0;
 }
 h2 {
   font-size: $font-desktop-size-xl;
@@ -44,6 +44,9 @@ h4 {
 }
 p {
   font-size: $font-desktop-size-sm;
+}
+.justified {
+  text-align: justify;
 }
 
 ul {
@@ -75,14 +78,14 @@ header {
       }
     }
   }
-}
-.my-toggler {
-  font-size: 60px;
-  color: $primary-color;
-}
-.logo {
-  aspect-ratio: 1/1;
-  width: 60px;
+  .my-toggler {
+    font-size: 40px;
+    color: $primary-color;
+  }
+  .logo {
+    aspect-ratio: 1/1;
+    width: 40px;
+  }
 }
 
 img.profile {
@@ -91,7 +94,7 @@ img.profile {
   border-radius: $border-radius-xl;
   box-shadow: $box-shadow;
   width: 100%;
-  max-width: 500px;
+  max-width: 600px;
 }
 .flex-container {
   display: flex;
@@ -169,6 +172,29 @@ footer {
   font-weight: bold;
   font-size: 4.5rem;
 }
+
+/* projects */
+
+.grid-container-projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  gap: 25px;
+  .project {
+    padding: 1rem;
+    max-width: 400px;
+    height: 100%;
+    img.projects {
+      aspect-ratio: 16/9;
+      width: 100%;
+      max-width: 400px;
+      margin-bottom: 2rem;
+      border-radius: $border-radius-md;
+      box-shadow: $box-shadow;
+    }
+  }
+}
+
 /* about */
 
 .grid-container-about {
