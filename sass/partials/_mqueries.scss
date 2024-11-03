@@ -67,16 +67,30 @@
   h3 {
     font-size: $font-tablet-size-lg;
   }
-  b,
+
   h4 {
     font-size: $font-tablet-size-md;
   }
   p {
     font-size: $font-tablet-size-sm;
   }
+  .p-top {
+    padding-top: $padding-top-lg;
+  }
   .lat-p {
     padding: 0 $lateral-padding-lg;
   }
+  .p-m {
+    padding: $padding-margin-lg;
+    margin: $padding-margin-lg;
+  }
+  .m-top {
+    margin-top: $margin-top-lg;
+  }
+  .m-bot {
+    margin-bottom: $margin-bottom-lg;
+  }
+
   .button {
     font-size: $font-tablet-size-md;
   }
@@ -128,15 +142,28 @@
   h3 {
     font-size: $font-mobile-size-lg;
   }
-  b,
+
   h4 {
     font-size: $font-mobile-size-md;
+  }
+  .p-top {
+    padding-top: $padding-top-md;
+  }
+  .lat-p {
+    padding: 0 $lateral-padding-md;
   }
   p {
     font-size: $font-mobile-size-sm;
   }
-  .lat-p {
-    padding: 0 $lateral-padding-md;
+  .p-m {
+    padding: $padding-margin-md;
+    margin: $padding-margin-md;
+  }
+  .m-top {
+    margin-top: $margin-top-md;
+  }
+  .m-bot {
+    margin-bottom: $margin-bottom-md;
   }
 
   .main-content {
@@ -213,7 +240,7 @@
   }
   .grid-container-about {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, auto);
+    grid-template-rows: repeat(3, auto);
     gap: 10px;
     .about-1 {
       grid-column: 1 / 2;
