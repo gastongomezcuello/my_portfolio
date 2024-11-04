@@ -75,7 +75,7 @@
     font-size: $font-tablet-size-sm;
   }
   .p-top {
-    padding-top: $padding-top-lg;
+    padding-top: $padding-margin-lg;
   }
   .lat-p {
     padding: 0 $lateral-padding-lg;
@@ -85,10 +85,10 @@
     margin: $padding-margin-lg;
   }
   .m-top {
-    margin-top: $margin-top-lg;
+    margin-top: $padding-margin-lg;
   }
   .m-bot {
-    margin-bottom: $margin-bottom-lg;
+    margin-bottom: $padding-margin-lg;
   }
 
   .button {
@@ -147,7 +147,7 @@
     font-size: $font-mobile-size-md;
   }
   .p-top {
-    padding-top: $padding-top-md;
+    padding-top: $padding-margin-md;
   }
   .lat-p {
     padding: 0 $lateral-padding-md;
@@ -160,10 +160,10 @@
     margin: $padding-margin-md;
   }
   .m-top {
-    margin-top: $margin-top-md;
+    margin-top: $padding-margin-md;
   }
   .m-bot {
-    margin-bottom: $margin-bottom-md;
+    margin-bottom: $padding-margin-md;
   }
 
   .main-content {

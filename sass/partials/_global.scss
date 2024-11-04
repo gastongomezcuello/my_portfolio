@@ -54,7 +54,7 @@ ul {
   list-style-type: none;
 }
 .p-top {
-  padding-top: $padding-top-xl;
+  padding-top: $padding-margin-xl;
 }
 .lat-p {
   padding: 0 $lateral-padding-xl;
@@ -64,10 +64,10 @@ ul {
   margin: $padding-margin-xl;
 }
 .m-top {
-  margin-top: $margin-top-xl;
+  margin-top: $padding-margin-xl;
 }
 .m-bot {
-  margin-bottom: $margin-bottom-xl;
+  margin-bottom: $padding-margin-xl;
 }
 
 header {
@@ -166,7 +166,7 @@ footer {
     width: 100%;
   }
   .carousel-item {
-    height: 14rem;
+    height: 16rem;
   }
   img.links {
     width: 5vw;
