@@ -95,6 +95,10 @@ header {
     aspect-ratio: 1/1;
     width: 40px;
   }
+  .display-out {
+    position: absolute; 
+    left: -9999px;
+  }
 }
 
 img.profile {
@@ -152,18 +156,20 @@ img.profile {
 
 footer {
   display: grid;
-  grid-template-columns: 1fr 7fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   place-items: center;
   gap: 25px;
   .footer-links {
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-around;
   }
   .phrases {
     width: 100%;
+    grid-column: span 3;
   }
   .copyright {
     width: 100%;
+    grid-column: span 2;
   }
   .carousel-item {
     height: 16rem;

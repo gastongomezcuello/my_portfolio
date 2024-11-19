@@ -105,6 +105,10 @@ header .logo {
   aspect-ratio: 1/1;
   width: 40px;
 }
+header .display-out {
+  position: absolute;
+  left: -9999px;
+}
 
 img.profile {
   filter: saturate(0.4);
@@ -167,16 +171,17 @@ img.profile {
 
 footer {
   display: grid;
-  grid-template-columns: 1fr 7fr;
+  grid-template-columns: 1fr 1fr 1fr;
   place-items: center;
   gap: 25px;
 }
 footer .footer-links {
   width: 100%;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 footer .phrases {
   width: 100%;
+  grid-column: span 3;
 }
 footer .copyright {
   width: 100%;
@@ -575,21 +580,31 @@ textarea {
   footer {
     grid-template-columns: 1fr;
   }
+  footer .phrases {
+    grid-column: span 1;
+  }
   footer .footer-links {
-    justify-content: space-around;
+    grid-column: span 1;
   }
   footer .copyright {
-    width: 100%;
     grid-column: span 1;
   }
   footer .carousel-item {
     height: 8rem;
+  }
+  footer img.links {
+    width: 8vw;
   }
   .carousel-caption {
     top: 0;
     left: 0;
     right: 0;
     width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  footer .carousel-item {
+    height: 9.5rem;
   }
 }
 

@@ -270,11 +270,20 @@
   }
   footer {
     grid-template-columns: 1fr;
+    .phrases {
+      grid-column: span 1;
+    }
     .footer-links {
-      justify-content: space-around;
+      grid-column: span 1;
+    }
+    .copyright {
+      grid-column: span 1;
     }
     .carousel-item {
       height: 8rem;
+    }
+    img.links {
+      width: 8vw;
     }
   }
   .carousel-caption {
@@ -284,3 +293,12 @@
     width: 100%;
   }
 }
+
+@media (max-width: 400px) {
+  footer {
+    .carousel-item {
+      height: 9.5rem;
+    }
+  }
+}
+
