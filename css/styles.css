@@ -167,7 +167,7 @@ img.profile {
 
 footer {
   display: grid;
-  grid-template-columns: 1fr 7fr 1fr;
+  grid-template-columns: 1fr 7fr;
   place-items: center;
   gap: 25px;
 }
@@ -180,6 +180,7 @@ footer .phrases {
 }
 footer .copyright {
   width: 100%;
+  grid-column: span 2;
 }
 footer .carousel-item {
   height: 16rem;
@@ -576,6 +577,10 @@ textarea {
   }
   footer .footer-links {
     justify-content: space-around;
+  }
+  footer .copyright {
+    width: 100%;
+    grid-column: span 1;
   }
   footer .carousel-item {
     height: 8rem;
